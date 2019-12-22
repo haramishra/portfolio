@@ -17,30 +17,28 @@ export default () => {
           <li class="list-inline-item">
             <i class="fab fa-js-square"></i>
           </li>
-          <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
-          </li>
+          
           <li class="list-inline-item">
             <i class="fab fa-react"></i>
           </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
-          </li>
+          
           <li class="list-inline-item">
             <i class="fab fa-sass"></i>
           </li>
+          
+          
           <li class="list-inline-item">
-            <i class="fab fa-less"></i>
+            <i class="fab fa-git-alt"></i>
           </li>
+
           <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
+            <i class="fab fa-bootstrap"></i>
           </li>
+
           <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
+            <i class="fab fa-linux"></i>
           </li>
-          <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
-          </li>
+         
           <li class="list-inline-item">
             <i class="fab fa-npm"></i>
           </li>
@@ -53,13 +51,13 @@ export default () => {
             Mobile-First, Responsive Design</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
+            Functional Programming &amp; OOPs</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
+            Web Design concepts</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
+            AJEX &amp; JSON</li>
         </ul>
       </div>
     </section>
