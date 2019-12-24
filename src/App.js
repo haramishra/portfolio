@@ -21,7 +21,7 @@ class App extends React.Component {
           <hr className="m-0" />
           <Intrests />
           <hr className="m-0" />
-          <Awards />
+          <Awards/>
         </div>
       </div>
     )
