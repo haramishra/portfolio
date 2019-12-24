@@ -1,17 +1,11 @@
 import React from 'react';
-import fcc1 from '../img/fcc1.png';
-import fcc2 from '../img/fcc2.png';
-import fcc3 from '../img/fcc3.png';
 
-
-let imageLinks = [fcc1, fcc2, fcc3];
-
-export default (props) => {
+export default () => {
     return (
         <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
             <div className="w-100">
                 <h2 className="mb-5">Awards &amp; Certifications</h2>
-                {/* <ul className="fa-ul mb-0">
+                <ul className="fa-ul mb-0">
                     <li>
                         <i className="fa-li fa fa-trophy text-warning"></i>
                         Google Analytics Certified Developer</li>
@@ -38,11 +32,7 @@ export default (props) => {
                         <i className="fa-li fa fa-trophy text-warning"></i>
                         3<sup>rd</sup>
                         Place - James Buchanan High School - Hackathon 2005</li>
-                </ul> */}
-                <div className="awards">
-                    {imageLinks && imageLinks.map((item, index) => <a href="#"><img src={item} key={index}></img></a>)}
-                </div>
-                
+                </ul>
             </div>
         </section>
     );
