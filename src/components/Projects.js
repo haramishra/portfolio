@@ -1,5 +1,48 @@
 import React from "react";
 
+let projects = [
+    {
+        title: "Portfolio",
+        image: "",
+        stack: ["reactjs", "bootstrap", "sass"],
+        description: "my portfolio",
+        github: "#"
+
+    }, {
+        title: "Indecision App",
+        image: "",
+        stack: ["reactjs", "sass"],
+        description: "It is a to-do app that display you a random task to do",
+        github: ""
+
+    }, {
+        title: "Landing",
+        image: "",
+        stack: ["html", "css"],
+        description: "landing appp",
+        github: ""
+
+    }
+];
+
+let showProjects = (projects) => {
+    return projects.map((item, index) => {
+        return (
+            <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-3" key={index}>
+                <div className="resume-content">
+                    <h3 className="mb-0">{item.title}</h3>
+                    <div className="subheading mb-3">{item.stack}</div>
+                    <div></div>
+                    <p>{item.description}</p>
+                </div>
+                <div className="resume-date text-md-right">
+                    <a href={item.github} target="blank"><span className="text-primary">Details >></span></a>
+                </div>
+            </div >
+        );
+    });
+}
+
 export default () => {
     return (
 
@@ -7,28 +50,7 @@ export default () => {
             <div className="w-100">
                 <h2 className="">projects</h2>
                 <a href="#" target="blank"><h5 className="text-primary mb-5 "><u>view all projects on github</u></h5></a>
-                <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div className="resume-content">
-                        <h3 className="mb-0">indecision app</h3>
-                        <div className="subheading mb-3">Reactjs</div>
-                        <div></div>
-                        <p>It is a to-do app with random selectior</p>
-                    </div>
-                    <div className="resume-date text-md-right">
-                        <span className="text-primary">Details >></span>
-                    </div>
-                </div>
-
-                <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
-                    <div className="resume-content">
-                        <h3 className="mb-0">James Buchanan High School</h3>
-                        <div className="subheading mb-3">Technology Magnet Program</div>
-                        <p>GPA: 3.56</p>
-                    </div>
-                    <div className="resume-date text-md-right">
-                        <span className="text-primary">August 2002 - May 2006</span>
-                    </div>
-                </div>
+                {projects && showProjects(projects)}
 
             </div>
         </section>
