@@ -1,6 +1,12 @@
 import React from 'react'
 import profilePicture from '../img/profile.jpg'
 
+const navItem = ["about", "skills", "projects", "interests", "awards"];
+
+const displayNavItems = (item) => item.map((item, index) =>  <li className="nav-item" key={index}>
+<a className="nav-link js-scroll-trigger" href={`#${item}`}>{item}</a>
+</li>)
+
 export default () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -15,25 +21,9 @@ export default () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            {/* <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#experience">Experience</a>
-            </li> */}
-             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#skills">Skills</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#projects">projects</a>
-            </li>
-           
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#interests">Interests</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#awards">Awards</a>
-            </li>
+
+            {displayNavItems(navItem)}
+            
           </ul>
         </div>
   </nav>
