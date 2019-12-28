@@ -37,18 +37,7 @@ export default () => {
         <p className="lead"><b><span className="text-primary">Hi, </span></b>I am a frontend developer. I develop web sites and web applications using modern front-end web technologies. The tech I am currently loving is <span className="text-primary">ReactJs.</span></p>
         <p className="lead mb-5">Need a developer? Give me a shout at <u><a href="mailto:haraprasad45@gmail.com" target="blank">haraprasad45@gmil.com</a></u> or feel free to check out my <a className='text-primary'><u>resume.</u></a></p>
         <div className="social-icons">
-          {/* <a href="#" target="blank">
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-          <a href="#" target="blank">
-            <i className="fab fa-github"></i>
-          </a>
-          <a href="#" target="blank">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="#" target="blank">
-            <i className="fab fa-free-code-camp"></i>
-          </a> */}
+          
           {socialIcons && displaySocialIcon(socialIcons)}
         </div>
       </div>
