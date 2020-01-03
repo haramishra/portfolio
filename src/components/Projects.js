@@ -6,21 +6,21 @@ let projects = [
         image: "",
         stack: ["reactjs", "bootstrap", "sass"],
         description: "my portfolio",
-        github: "#"
+        github: "https://github.com/haramishra/portfolio"
 
     }, {
         title: "Indecision App",
         image: "",
         stack: ["reactjs", "sass"],
         description: "It is a to-do app that display you a random task to do",
-        github: ""
+        github: "https://github.com/haramishra/indecisionApp"
 
     }, {
         title: "Landing",
         image: "",
         stack: ["html", "css"],
         description: "landing appp",
-        github: ""
+        github: "https://github.com/haramishra/landing-page"
 
     }
 ];
@@ -36,7 +36,7 @@ let showProjects = (projects) => {
                     <p>{item.description}</p>
                 </div>
                 <div className="resume-date text-md-right">
-                    <a href={item.github} target="blank"><span className="text-primary">Details >></span></a>
+                    <a href={item.github} ><span className="text-primary">Details >></span></a>
                 </div>
             </div >
         );
