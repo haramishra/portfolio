@@ -18,7 +18,7 @@ const socialIcons = [
 
 const displaySocialIcon = (icon) => icon.map((item, index) => {
   return (
-    <a href={item.link} key={index} target="blank">
+    <a href={item.link} key={index} >
       <i className={`fab ${item.icon}`}></i>
     </a>
   );

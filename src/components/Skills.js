@@ -16,7 +16,7 @@ let workflow = [
   "Mobile-First, Responsive Design",
   "Functional Programming & OOPs",
   "Web Design concepts",
-  "AJEX & JSON"
+  "AJAX & JSON"
 ]
 
 let displayProgTools = (proTool) => {
