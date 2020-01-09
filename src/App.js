@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import ReactTooltip from 'react-tooltip';
 import Nav from './components/nav';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -16,6 +17,7 @@ class App extends React.Component {
           <About />
           <hr className="m-0" />
           <Skills />
+          <ReactTooltip />
           <hr className="m-0" />
           <Projects />
           <hr className="m-0" />

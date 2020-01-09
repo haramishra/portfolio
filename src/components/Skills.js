@@ -22,7 +22,7 @@ let workflow = [
 let displayProgTools = (proTool) => {
   return programmingToolClass && programmingToolClass.map((item, index) => {
     return (
-      <li className="list-inline-item" data-toggle="tooltip" data-placement="top" title={item[0]} key={index}>
+      <li className="list-inline-item" data-tip={item[0]} key={index}>
         <i className={item[1]}></i>
       </li>
     );
