@@ -1,15 +1,15 @@
 import React from 'react';
 
 let programmingToolClass = [
-  "fab fa-html5",
-  "fab fa-css3-alt",
-  "fab fa-js-square",
-  "fab fa-react",
-  "fab fa-sass",
-  "fab fa-git-alt",
-  "fab fa-bootstrap",
-  "fab fa-linux",
-  "fab fa-npm"
+  ["html5", "fab fa-html5"],
+  ["CSS", "fab fa-css3-alt"],
+  ["JavaScript", "fab fa-js-square"],
+  ["Reactjs", "fab fa-react"],
+  ["SASS", "fab fa-sass"],
+  ["git/github", "fab fa-git-alt"],
+  ["Bootstrap", "fab fa-bootstrap"],
+  ["Linux", "fab fa-linux"],
+  ["NPM", "fab fa-npm"]
 ];
 
 let workflow = [
@@ -22,8 +22,8 @@ let workflow = [
 let displayProgTools = (proTool) => {
   return programmingToolClass && programmingToolClass.map((item, index) => {
     return (
-      <li className="list-inline-item" key={index}>
-        <i className={item}></i>
+      <li className="list-inline-item" data-toggle="tooltip" data-placement="top" title={item[0]} key={index}>
+        <i className={item[1]}></i>
       </li>
     );
   })
