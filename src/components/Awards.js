@@ -4,8 +4,8 @@ let certificate = [
         text: "frontend freecodecamp",
         link: "https://www.freecodecamp.org/certification/haramishra/responsive-web-design"
     }, {
-        text: "xyxjkjfs",
-        link: "https://www.freecodecamp.org/certification/haramishra/responsive-web-design"
+        text: "JavaScript Algorithms and Data Structures",
+        link: "https://www.freecodecamp.org/certification/haramishra/javascript-algorithms-and-data-structures"
     }
 ]
 
