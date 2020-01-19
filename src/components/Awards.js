@@ -1,7 +1,7 @@
 import React from 'react';
 let certificate = [
     {
-        text: "frontend freecodecamp",
+        text: "Responsive Web Design",
         link: "https://www.freecodecamp.org/certification/haramishra/responsive-web-design"
     }, {
         text: "JavaScript Algorithms and Data Structures",
