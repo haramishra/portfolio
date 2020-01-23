@@ -15,8 +15,8 @@ let programmingToolClass = [
 let workflow = [
   "Mobile-First, Responsive Design",
   "Functional Programming & OOPs",
-  "Web Design concepts",
-  "AJAX & JSON"
+  "Web Designing concepts",
+  "REST API"
 ]
 
 let displayProgTools = (proTool) => {
