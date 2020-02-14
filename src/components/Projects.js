@@ -2,35 +2,39 @@ import React from "react";
 
 let projects = [
     {
-        title: "Portfolio",
-        image: "",
-        stack: ["reactjs", "bootstrap", "sass"],
-        description: "my portfolio",
-        github: "https://github.com/haramishra/portfolio"
-
-    }, {
         title: "Indecision App",
         image: "",
-        stack: ["reactjs", "sass"],
+        stack: ["react", "sass"],
         description: "It is a to-do app that display you a random task to do",
+        website: "https://sad-agnesi-d3aca4.netlify.com/",
         github: "https://github.com/haramishra/indecisionApp"
 
     }, {
-        title: "Landing",
+        title: "Material-UI calculator",
         image: "",
-        stack: ["html", "css"],
-        description: "landing appp",
-        github: "https://github.com/haramishra/landing-page"
+        stack: ['react', "material UI", "mathjs"],
+        description: "Basic Calculator",
+        website: "https://suspicious-goodall-4b7b59.netlify.com/",
+        github: "https://github.com/haramishra/fcc-js-calculator"
+
+    },
+    {
+        title: "Markdown Previewer",
+        image: "",
+        stack: ['react', "material UI", 'marked'],
+        description: "Parse Markdown Into HTML",
+        website: "https://infallible-mcclintock-5d387f.netlify.com/",
+        github: "https://github.com/haramishra/fcc-js-calculator"
 
     }
 ];
 
 let showProjects = (projects) => {
-    return projects.map((item, index) => {
+    return projects.map((item) => {
         return (
-            <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-3" key={index}>
+            <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-3" key={item.title}>
                 <div className="resume-content">
-                    <h3 className="mb-0">{item.title}</h3>
+                    <h3 className="mb-0"><a href={item.website} style={{color: '#343a40'}}>{item.title}</a></h3>
                     <div className="subheading mb-3">{item.stack.join(" - ")}</div>
                     <div></div>
                     <p>{item.description}</p>
@@ -49,7 +53,7 @@ export default () => {
         <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
             <div className="w-100">
                 <h2 className="">projects</h2>
-                <a href="#" target="blank"><h5 className="text-primary mb-5 "><u>view all projects on github</u></h5></a>
+                <a href="https://github.com/haramishra/" target="blank"><h5 className="text-primary mb-5 "><u>view all projects on github</u></h5></a>
                 {projects && showProjects(projects)}
 
             </div>
