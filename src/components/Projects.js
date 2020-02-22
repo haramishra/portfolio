@@ -34,13 +34,13 @@ let showProjects = (projects) => {
         return (
             <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-3" key={item.title}>
                 <div className="resume-content">
-                    <h3 className="mb-0"><a href={item.website} style={{color: '#343a40'}}>{item.title}</a></h3>
+                    <h3 className="mb-0"><a href={item.github} style={{color: '#343a40'}}>{item.title}</a></h3>
                     <div className="subheading mb-3">{item.stack.join(" - ")}</div>
                     <div></div>
                     <p>{item.description}</p>
                 </div>
                 <div className="resume-date text-md-right">
-                    <a href={item.github} ><span className="text-primary">Details >></span></a>
+                    <a href={item.website} ><span className="text-primary">Live View >></span></a>
                 </div>
             </div >
         );
